@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #bd0000,#00bd00,#0000bd);
+    animation: anim .5s ease-in infinite;
+}
+@keyframes anim{
+    0%{
+        background: linear-gradient(45deg,#bd0000,#00bd00, #0000bd);
+    }
+    50%{
+        background: linear-gradient(90deg,#bd0000, #00bd00, #0000bd);
+    }
+    100%{
+        background: linear-gradient(100deg,#bd0000, #00bd00, #0000bd);
+    }
+}
+/*=====Game Box Part Start=====*/
+.aerow_btn{
+    width: 20px;
+    height: 20px;
+    margin: 10px 0 10px 10px;
+    font-size: 20px;
+    display: none;
+    transition: all linear .1s;
+}
+.aerow_btn2{
+    width: 20px;
+    height: 20px;
+    margin: 10px 0 10px 10px;
+    font-size: 20px;
+    display: none;
+    transition: all linear .1s;
+}
+.aerow_btn:hover{
+    color: #f5ad5c;
+    cursor: pointer;
+}
+.box{
+    width: 600px;
+    height: 500px;
+    background: #8ee8ff;
+    border-radius: 10px;
+    box-shadow: -2px 4px 41px 13px rgba(0,0,0,0.93);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 900;
+    border: 5px solid #000000;
+    border: 5px solid #ffffff;
+    overflow: hidden;
+}
+.box h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: "Jersey 15", sans-serif;
+    margin-top: 50px;
+    padding: 0 5px 0 5px;
+    color: #04614d;
+}
+
+.box .button{
+    font-size: 30px;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    color: #ffffff;
+    background: #1414e0;
+}
+.box .button:active{
+    font-size: 31px;
+    padding: 21px;
+}
+/*=====Game Box Part End=====*/
+
+/*=====Player Name Selection Box Part Start=====*/
+
+.player_name_selection{
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+.player_name_selection h2{
+    font-size: 40px;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 900;
+    color: #5350fc;
+}
+.player_section{
+    width: 400px;
+    background: #58aeff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: inset 0px 0px 20px 8px rgba(0,0,0,0.75);
+}
+.player_section h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #4d0786;
+}
+.player_two{
+    margin-top: 50px;
+}
+.player_section input{
+    text-align: center;
+    font-size: 20px;
+    border: 5px solid #a770f0;
+    background: transparent;
+    border-radius: 50px;
+    padding: 5px 0 5px 0;
+    box-shadow: inset 0px 0px 12px 5px rgba(0,0,0,0.39);
+}
+.player_section input::placeholder{
+    color: #ffffff;
+}
+.start{
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 50px;
+    color: #ffffff;
+    background: #187218;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    transition: all linear .1s;
+}
+.start:hover{
+    color: #4edd4e;
+    box-shadow: 0px 0px 12px 8px rgba(0,0,0,0.39);
+}
+.start:active{
+    color: #ffffff;
+}
+.error_for_no_selection{
+    color: #ff0000;
+    font-size: 15px;
+    margin-top: 15px;
+    display: none;
+}
+.error_for_same_selection{
+    color: #ff0000;
+    font-size: 15px;
+    margin-top: 15px;
+    display: none;
+}
+/*=====Player Name Selection Box Part End=====*/
+
+/*=====Gameplay Intro Part Start=====*/
+.versus_one{
+    font-size: 30px;
+    display: none;
+    font-weight: 900;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    color: rgb(118, 158, 233);
+    font-family: "Jersey 25", sans-serif;
+    text-transform: uppercase;
+}
+.handshake_v{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    border-radius: 50%;
+}
+.versus_two{
+    font-size: 30px;
+    display: none;
+    font-weight: 900;
+    position: absolute;
+    bottom: 70px;
+    right: 50px;
+    color: rgb(118, 158, 233);
+    font-family: "Jersey 25", sans-serif;
+    text-transform: uppercase;
+}
+.go_btn{
+    font-size: 30px;
+    color: #ffffff;
+    background: #000000;
+    font-weight: 900;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    font-family: "Roboto", sans-serif;
+    padding: 5px;
+}
+.go_btn:active{
+    font-size: 35px;
+}
+.star_box{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+.star_box .star{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: url(../img/star.jpg);
+    animation: backgroundmove 30s linear infinite;
+}
+@keyframes backgroundmove{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
+    }
+}
+/*=====Gameplay Intro Part End=====*/
+
+/*=====Player1 Game Part Start=====*/
+.player1_game_header{
+    width: 100%;
+    background: #000000;
+    font-size: 50px;
+    color: #000000;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+}
+.player1_game_header_name{
+    text-transform: capitalize;
+    color: #09368a;
+}
+.player1_input{
+    width: 500px;
+    text-align: center;
+    border: none;
+    border: 1px solid #4d0786;
+    font-size: 30px;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    opacity: .5;
+    -webkit-text-security: square;
+}
+.player1_input::placeholder{
+    color: #4e4e4e;
+}
+.player1_submit{
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    background: #0d5a79;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    padding: 10px;
+    transition: all linear .1s;
+}
+.player1_submit:active{
+    font-size: 35px;
+    box-shadow: 0px -1px 9px 8px rgba(0,0,0,0.75);
+}
+.player1_game_header_fullname{
+    display: none;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    margin-top: 150px;
+    text-align: center;
+    color: #1414e0;
+    padding: 0 10px 0 10px;
+}
+.error_for_number1_blank{
+    font-size: 15px;
+    color: #ff0000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*=====Player1 Game Part End=====*/
+
+/*=====Player2 Game Part Start=====*/
+.player2_game_header{
+    width: 100%;
+    background: #000000;
+    font-size: 50px;
+    color: #000000;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+}
+.player2_game_header_name{
+    text-transform: capitalize;
+    color: #09368a;
+}
+.player2_input{
+    width: 500px;
+    text-align: center;
+    border: none;
+    border: 1px solid #4d0786;
+    font-size: 30px;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    opacity: .5;
+    -webkit-text-security: square;
+}
+.player2_input::placeholder{
+    color: #4e4e4e;
+}
+.player2_submit{
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    background: #0d5a79;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    padding: 10px;
+    transition: all linear .1s;
+}
+.player2_submit:active{
+    font-size: 35px;
+    box-shadow: 0px -1px 9px 8px rgba(0,0,0,0.75);
+}
+.player2_game_header_fullname{
+    display: none;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    margin-top: 150px;
+    text-align: center;
+    color: #1414e0;
+    padding: 0 10px 0 10px;
+}
+.error_for_number2_blank{
+    font-size: 15px;
+    color: #ff0000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*=====Player2 Game Part End=====*/
+
+/*=====WinnerCup Part Start=====*/
+.winner_cup{
+    display: none;
+}
+.winner_cup img{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.winner_cup h6{
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: #306bda;
+}
+.player_winner{
+    font-size: 25px;
+    color: #4d0786;
+    text-transform: uppercase;
+}
+.winner{
+    font-size: 30px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #e98a1d;
+}
+.ner{
+    color: #f831ac;
+}
+/*=====WinnerCup Part End=====*/

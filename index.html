@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Console</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Jaro:opsz@6..72&family=Jersey+25&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="web-items/main/css/style.css">
+</head>
+
+<body>
+    <!--Welcome Box Part Start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="box">
+                    <h1 class="welcome_msg">Welcome to our Colorful Gaming Studio of modern era. Nice to meet you. Get
+                        fun today through it.</h1>
+                    <button class="button">Get Started</button>
+                    <!--Welcome Box Part End-->
+
+                    <!--Player Name Selection Box Part Start-->
+                    <div class="player_name_selection">
+                        <h2>PLEASE PROVIDE PLAYER'S NAME</h2>
+                        <div class="player_section">
+                            <h3 class="player_one">Player Name</h3>
+                            <input class="input_one" type="text" placeholder="Type player name here">
+                            <h3 class="player_two">Player Name</h3>
+                            <input class="input_two" type="text" placeholder="Type player name here"><br>
+                            <button class="start start_two">Get Ready to Play</button>
+                            <div class="error_for_no_selection"></div>
+                        </div>
+                        <div class="error_for_same_selection"></div>
+                    </div>
+                    <!--Player Name Selection Box Part End-->
+
+                    <!--Gameplay Intro Part Start-->
+                    <div class="star_box">
+                        <div class="star"></div>
+                    </div>
+                    <h4 class="versus_one"></h4>
+                    <img class="handshake_v" src="web-items/main/img/Screenshot 2024-05-08 145925.png">
+                    <h5 class="versus_two"></h5>
+                    <button class="go_btn">Go</button>
+                    <!--Gameplay Intro Part End-->
+
+                    <!--Player Game Part Start-->
+                    <h5 class="player1_game_header"></h5>
+                    <p class="player1_game_header_fullname">Enter a number and challenge to <span
+                            class="player1_game_header_name"></span> for guess</p>
+                    <div class="player1_input_submit">
+                        <input class="player1_input" type="number" placeholder="Enter number">
+                        <button class="player1_submit">Challenge</button>
+                        <div class="error_for_number1_blank"></div>
+                    </div>
+                    <h5 class="player2_game_header"></h5>
+                    <p class="player2_game_header_fullname">Guess <span
+                            class="player2_game_header_name"></span>'s number to win</p>
+                    <div class="player2_input_submit">
+                        <input class="player2_input" type="number" placeholder="Enter number">
+                        <button class="player2_submit">Guess</button>
+                        <div class="error_for_number2_blank"></div>
+                    </div>
+                    <!--Player Game Part End-->
+
+                    <!--WinnerCup Part Start-->
+                    <div class="winner_cup">
+                        <h6>Congratulations!<br><span class="player_winner"></span></h6>
+                        <img src="web-items/main/img/WC.png" alt="">
+                        <p class="winner">Win<span class="ner">ner</span></p>
+                    </div>
+                    <!--WinnerCup Part End-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="web-items/main/js/script.js"></script>
+</body>
+
+</html>
